@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\ProgramData\Microsoft\AndroidSDK\25\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="D:\Documents\Projectos\VisualStudio2017Projects\PDMII_Exercicio_08\PDMII_Exercicio_08\platforms\android\build\intermediates\pre-dexed\debug\support-annotations-24.1.1_a6910e45f287596f1e94dac8282fe1c94bf1b052.jar" />
+    </item>
+    <item
+        jar="D:\Documents\Projectos\VisualStudio2017Projects\PDMII_Exercicio_08\PDMII_Exercicio_08\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="D:\Documents\Projectos\VisualStudio2017Projects\PDMII_Exercicio_08\PDMII_Exercicio_08\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.1.1_8565e01c943f67d65cec2e47cde983bdecbcf92c.jar" />
+    </item>
+    <item
+        jar="D:\Documents\Projectos\VisualStudio2017Projects\PDMII_Exercicio_08\PDMII_Exercicio_08\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\libs\internal_impl-24.1.1.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="D:\Documents\Projectos\VisualStudio2017Projects\PDMII_Exercicio_08\PDMII_Exercicio_08\platforms\android\build\intermediates\pre-dexed\debug\internal_impl-24.1.1_105e1c22215879721a8b9acbbc3ad4ee0e1e0c1a.jar" />
+    </item>
+    <item
+        jar="D:\Documents\Projectos\VisualStudio2017Projects\PDMII_Exercicio_07\PDMII_Exercicio_07\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="67296da620c7224d8fe6f8b4bd2ad8872b9933c9">
+        <dex dex="D:\Documents\Projectos\VisualStudio2017Projects\PDMII_Exercicio_07\PDMII_Exercicio_07\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_76c0489ecd7caadaa4db3d5ee47424f029825445.jar" />
+    </item>
+    <item
+        jar="D:\Documents\Projectos\VisualStudio2017Projects\PDMII_Exercicio_08\PDMII_Exercicio_08\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="08eba9e69c67d2c4820767e02186cd6271e73b34">
+        <dex dex="D:\Documents\Projectos\VisualStudio2017Projects\PDMII_Exercicio_08\PDMII_Exercicio_08\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_f04445403b87098ff3057d75a3e1c56b20f99caf.jar" />
+    </item>
+
+</items>
