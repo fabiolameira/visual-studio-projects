@@ -1,0 +1,33 @@
+.ui-header {
+    background-color: #2d9fc4 !important;
+    color: white !important;
+    border-bottom: 6px solid #2d9fc4 !important;
+    border-top: 6px solid #2d9fc4 !important
+}
+
+.ui-title {
+    margin: 0 10% !important;
+    text-shadow: none !important;
+}
+
+.ui-footer {
+    background-color: #cccccc !important;
+    border-top: 3px solid #cccccc;
+    font-size:0.8em !important;
+}
+
+div[role="main"] {
+    overflow-y: auto !important;
+}
+
+.ui-page {
+    -webkit-backface-visibility: hidden;
+}
+
+.ui-grid-a img {
+    width: 100%;
+}
+
+.ui-grid-a {
+    border: 1px solid #dddddd;
+}

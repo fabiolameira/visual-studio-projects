@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' 'unsafe-inline' 'unsafe-eval' data: *">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+
+    <title>PDMII_Panel</title>
+</head>
+<body>
+    <!--Página Principal-->
+    <!--##########################################################################################################-->
+    <div data-role="page" id="main-page">
+
+        <div data-role="panel" data-display="overlay" id="mypanel">
+            <h1>Contexto do Painel</h1>
+            <a href="#" class="ui-btn ui-icon-gear ui-btn-icon-left">Definições</a>
+            <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-left" data-rel="close">Fechar Painel</a>
+        </div>
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false">
+            <a href="#mypanel" data-icon="bars" data-iconpos="notext">Panel</a>
+            <h1>Panel</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h1>Página Principal</h1>
+
+
+            <!--Form Pop-Up-->
+            <!--##########################################################################################################-->
+            <a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-icon-check ui-btn-icon-left" data-transition="pop">Login</a>
+            <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+                <form>
+                    <div style="padding: 10px 20px;">
+                        <h3>Faça  Login</h3>
+                        <label for="un" class="ui-hidden-accessible">Username:</label>
+                        <input type="text" name="user" id="un" value="" placeholder="Username" data-theme="a" />
+                        <label for="pw" class="ui-hidden-accessible">Password:</label>
+                        <input type="password" name="pass" id="pw" value="" placeholder="Password" data-theme="a" />
+                        <button type="submit" class="ui-btn ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Login</button>
+                    </div>
+                </form>
+            </div>
+
+            <!--Imagens Pop-Up-->
+            <!--##########################################################################################################-->
+            <div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div class="ui-body ui-body-d">
+                            <a href="#popupParis" data-rel="popup" data-position-to="window" data-transition="fade">
+                                <img class="popphoto" src="images/paris.jpg" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div class="ui-body ui-body-d">
+                            <a href="#popupSydney" data-rel="popup" data-position-to="window" data-transition="fade">
+                                <img class="popphoto" src="images/sydney.jpg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-role="popup" id="popupParis" data-overlay-theme="b" data-theme="b" data-corners="false">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">
+                        Close
+                    </a>
+                    <img class="popphoto" src="images/paris.jpg" style="max-height: 512px;" />
+                </div>
+
+                <div data-role="popup" id="popupSydney" data-overlay-theme="b" data-theme="b" data-corners="false">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">
+                        Close
+                    </a>
+                    <img class="popphoto" src="images/sydney.jpg" style="max-height: 512px;" />
+                </div>
+            </div>
+
+        </div>
+
+        <div data-id="f1" data-role="footer" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false"><h4>Copyright ESTGP &copy; 2018</h4></div>
+    </div>
+
+
+
+    <!--Scripts-->
+    <!--##########################################################################################################-->
+    <script src="scripts/jquery-1.8.0.min.js"></script>
+    <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
