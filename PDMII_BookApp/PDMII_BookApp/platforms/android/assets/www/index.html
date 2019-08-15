@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' 'unsafe-inline' 'unsafe-eval' data: *">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Book App</title>
+</head>
+<body>
+
+    <!-- Página Principal -->
+    <div data-role="page" id="main-page">
+        <div data-role="header" data-position="fixed">
+            <h1>The Book App</h1>
+            <div class="ui-btn-right"><img id="header-icon" src="images/books.png" /></div>
+        </div>
+        <div role="main" class="ui-content">
+            <p>
+                <a href="#page_form" class="ui-btn ui-alt-icon ui-corner-all" id="btnAddBook" data-transition="slide">Inserir Livro</a>
+                <a href="#page_list_edit_delete" class="ui-btn ui-alt-icon ui-corner-all" id="btnListBook" data-transition="slidedown">Listar Livros</a>
+                <a href="#page_list_edit_delete" class="ui-btn ui-alt-icon ui-corner-all" id="btnEditBook" data-transition="slidedown">Editar Livro</a>
+                <a href="#page_list_edit_delete" class="ui-btn ui-alt-icon ui-corner-all" id="btnDeleteBook" data-transition="slidedown">Eliminar Livro</a>
+            </p>
+        </div>
+
+        <div data-role="footer" data-position="fixed"><h4>Copyright ESTGP &copy; 2018</h4></div>
+    </div>
+
+    <!-- Página do Formolário -->
+    <div data-role="page" id="page_form">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-icon="back" data-rel="back" data-transition="slideup" data-iconpos="notext">Home</a>
+            <h1 id="form_title"></h1>
+            <div class="ui-btn-right"><img id="header-icon" src="images/books.png" /></div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <label>Insira os dados do livro:</label>
+            <form id="form">
+                <div class="form-group">
+                    <label for="photo-input">Capa:</label>
+                    <input type="text" id="bookCover" placeholder="URL da Imagem" name="bookCover-input" required>
+                    <input type="button" id="btnPickBookCover" value="Escoher Imagem">
+                </div>
+
+                <div class="form-group">
+                    <label>Título:</label>
+                    <input type="text" id="title" name="title" placeholder="Introduza o título do livro" required />
+                </div>
+
+                <div class="form-group">
+                    <label>Autor:</label>
+                    <input type="text" id="author" name="author" placeholder="Introduza o autor do livro" required />
+                </div>
+
+                <div class="form-group">
+                    <label>Género:</label>
+                    <select id="genre" name="genre" required>
+                        <option value="Aventura">Aventura</option>
+                        <option value="Biografia">Biografia</option>
+                        <option value="Fantasia">Fantasia</option>
+                        <option value="Policial">Policial</option>
+                        <option value="Terror">Terror</option>
+                        <option value="Romance">Romance</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Data de Edição:</label>
+                    <input type="month" data-clear-btn="true" id="editDate" name="editDate" placeholder="Introduza a data de edição do livro" required />
+                </div>
+
+                <div class="form-group">
+                    <label>Descrição:</label>
+                    <textarea cols="40" rows="8" id="description" name="description" placeholder="Introduza a descrição do livro" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Código ISBN:</label>
+                    <input type="text" data-clear-btn="true" value="ISBN" pattern="ISBN[0-9]{6}" id="isbnCode" name="isbnCode" placeholder="Introduza o código ISBN do livro" required />
+                </div>
+
+                <div class="form-group">
+                    <label>Nota:</label>
+                    <input type="range" name="rate" id="rate" value="0" min="0" max="5" step="1" data-highlight="true" required />
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Submeter" />
+                </div>
+
+            </form>
+        </div>
+
+        <div data-role="footer" data-position="fixed"><h4>Copyright ESTGP &copy; 2018</h4></div>
+    </div>
+
+    <!-- Página da Listar / Editar / Eliminar Livros -->
+    <div data-role="page" id="page_list_edit_delete">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-icon="back" data-rel="back" data-transition="slideup" data-iconpos="notext">Home</a>
+            <h1 id="list_edit_delete_title"></h1>
+            <div class="ui-btn-right"><img id="header-icon" src="images/books.png" /></div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div id="books-list-edit-delete"></div>
+        </div>
+
+        <div id="f1" data-role="footer" data-position="fixed"><h4>Copyright ESTGP &copy; 2018</h4></div>
+    </div>
+
+    <!-- Página Detalhes dos Livros -->
+    <div data-role="page" id="page_details">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-icon="back" data-rel="back" data-transition="slideup" data-iconpos="notext">Home</a>
+            <h1>Detalhes</h1>
+            <div class="ui-btn-right"><img id="header-icon" src="images/books.png" /></div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div id="book-details"></div>
+        </div>
+
+        <div id="f1" data-role="footer" data-position="fixed"><h4>Copyright ESTGP &copy; 2018</h4></div>
+    </div>
+
+    <script src="scripts/jquery-1.8.0.min.js"></script>
+    <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>

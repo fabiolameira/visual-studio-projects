@@ -1,0 +1,174 @@
+[
+    {
+        "outputFile": "D:\\Documents\\Projectos\\VisualStudio2017Projects\\PDMII_BookApp\\PDMII_BookApp\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 63,
+                    "endOffset": 114
+                },
+                "from": {
+                    "file": "D:\\Documents\\Projectos\\VisualStudio2017Projects\\PDMII_BookApp\\PDMII_BookApp\\platforms\\android\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 119,
+                    "endColumn": 49,
+                    "endOffset": 164
+                },
+                "from": {
+                    "file": "D:\\Documents\\Projectos\\VisualStudio2017Projects\\PDMII_BookApp\\PDMII_BookApp\\platforms\\android\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 49,
+                        "endOffset": 100
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 169,
+                    "endColumn": 58,
+                    "endOffset": 223
+                },
+                "from": {
+                    "file": "D:\\Documents\\Projectos\\VisualStudio2017Projects\\PDMII_BookApp\\PDMII_BookApp\\platforms\\android\\res\\values\\strings.xml"
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\Documents\\Projectos\\VisualStudio2017Projects\\PDMII_Exercicio_08\\PDMII_Exercicio_08\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 63,
+                    "endOffset": 114
+                },
+                "from": {
+                    "file": "D:\\Documents\\Projectos\\VisualStudio2017Projects\\PDMII_Exercicio_08\\PDMII_Exercicio_08\\platforms\\android\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 170,
+                        "endColumn": 63,
+                        "endOffset": 229
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 119,
+                    "endColumn": 55,
+                    "endOffset": 170
+                },
+                "from": {
+                    "file": "D:\\Documents\\Projectos\\VisualStudio2017Projects\\PDMII_Exercicio_08\\PDMII_Exercicio_08\\platforms\\android\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 55,
+                        "endOffset": 106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 175,
+                    "endColumn": 58,
+                    "endOffset": 229
+                },
+                "from": {
+                    "file": "D:\\Documents\\Projectos\\VisualStudio2017Projects\\PDMII_Exercicio_08\\PDMII_Exercicio_08\\platforms\\android\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 111,
+                        "endColumn": 58,
+                        "endOffset": 165
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\Documents\\Projectos\\VisualStudio2017Projects\\PDMII_Exercicio_07\\PDMII_Exercicio_07\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 63,
+                    "endOffset": 114
+                },
+                "from": {
+                    "file": "D:\\Documents\\Projectos\\VisualStudio2017Projects\\PDMII_Exercicio_07\\PDMII_Exercicio_07\\platforms\\android\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 170,
+                        "endColumn": 63,
+                        "endOffset": 229
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 119,
+                    "endColumn": 55,
+                    "endOffset": 170
+                },
+                "from": {
+                    "file": "D:\\Documents\\Projectos\\VisualStudio2017Projects\\PDMII_Exercicio_07\\PDMII_Exercicio_07\\platforms\\android\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 55,
+                        "endOffset": 106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 175,
+                    "endColumn": 58,
+                    "endOffset": 229
+                },
+                "from": {
+                    "file": "D:\\Documents\\Projectos\\VisualStudio2017Projects\\PDMII_Exercicio_07\\PDMII_Exercicio_07\\platforms\\android\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 111,
+                        "endColumn": 58,
+                        "endOffset": 165
+                    }
+                }
+            }
+        ]
+    }
+]
