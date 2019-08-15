@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Documents\Projectos\VisualStudio2017Projects\SQLiteDemo\SQLiteDemo\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="b056896ca0ae9a49fd5150bad1be9cb0b4c431c7">
+        <dex dex="D:\Documents\Projectos\VisualStudio2017Projects\SQLiteDemo\SQLiteDemo\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_f87da15462ca82454359e2c83486b9a74b6531f1.jar" />
+    </item>
+    <item
+        jar="D:\Documents\Projectos\VisualStudio2017Projects\SQLiteDemo\SQLiteDemo\platforms\android\libs\sqlite-connector.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="76169ab23a4f939925491c6fe186749da5a56ee9">
+        <dex dex="D:\Documents\Projectos\VisualStudio2017Projects\SQLiteDemo\SQLiteDemo\platforms\android\build\intermediates\pre-dexed\debug\sqlite-connector_a3e758048f0d71e274848dc10cf575053941e794.jar" />
+    </item>
+
+</items>
