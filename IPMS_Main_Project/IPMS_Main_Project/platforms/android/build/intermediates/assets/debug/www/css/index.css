@@ -1,0 +1,139 @@
+/*######################## ICONS ########################*/
+.ui-icon-dashboard:after {
+    background-image: url("../images/icons/dashboard.png");
+    background-size: 18px 18px;
+}
+
+.ui-icon-cogs:after {
+    background-image: url("../images/icons/cogs.png");
+    background-size: 18px 18px;
+}
+
+.ui-icon-cart:after {
+    background-image: url("../images/icons/cart.png");
+    background-size: 18px 18px;
+}
+
+.ui-icon-cubes:after {
+    background-image: url("../images/icons/cubes.png");
+    background-size: 18px 18px;
+}
+
+.ui-icon-logout:after {
+    background-image: url("../images/icons/logout.png");
+    background-size: 18px 18px;
+}
+
+
+/*######################## CUSTOM CSS ########################*/
+#header-icon {
+    width: 32px;
+    height: 32px;
+}
+
+#loginImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.productPhoto {
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 5px !important;
+}
+
+
+#loginH1 {
+    text-align: center;
+}
+
+.ui-btn-active {
+    background-color: orange !important;
+    border-color: orange !important;
+}
+
+
+.ui-title {
+    font-weight: bold;
+}
+
+div[role="main"] {
+    overflow-y: auto !important;
+}
+
+.huge {
+    font-size: 40px;
+}
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+    .panel-green > .panel-heading {
+        border-color: #5cb85c;
+        color: white;
+        background-color: #5cb85c;
+    }
+
+    .panel-green > a {
+        color: #5cb85c !important;
+    }
+
+        .panel-green > a:hover {
+            color: #3d8b3d !important;
+        }
+
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+
+    .panel-yellow > .panel-heading {
+        border-color: #f0ad4e;
+        color: white;
+        background-color: #f0ad4e;
+    }
+
+    .panel-yellow > a {
+        color: #f0ad4e !important;
+    }
+
+        .panel-yellow > a:hover {
+            color: #df8a13 !important;
+        }
+
+
+.panel-red {
+    border-color: #d9534f;
+}
+
+    .panel-red > .panel-heading {
+        border-color: #d9534f;
+        color: white;
+        background-color: #d9534f;
+    }
+
+    .panel-red > a {
+        color: #d9534f !important;
+    }
+
+        .panel-red > a:hover {
+            color: #b52b27 !important;
+        }
+
+.thumbsImg {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+#productsDescription {
+    white-space: normal !important;
+}

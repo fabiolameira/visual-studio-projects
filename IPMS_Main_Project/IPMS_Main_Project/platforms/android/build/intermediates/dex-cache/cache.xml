@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Documents\Projectos\VisualStudio2017Projects\IPMS_Main_Project\IPMS_Main_Project\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="61b797dc233c8c2f3e6803eb7e9dbf3b79139948">
+        <dex dex="D:\Documents\Projectos\VisualStudio2017Projects\IPMS_Main_Project\IPMS_Main_Project\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_29419964d3040ed720afd4b8d0e2e6c21f3898c2.jar" />
+    </item>
+
+</items>

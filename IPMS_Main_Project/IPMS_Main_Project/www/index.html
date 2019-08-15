@@ -1,0 +1,587 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' 'unsafe-inline' 'unsafe-eval' data: *">-->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <!-- Jquery Mobile Core CSS -->
+    <link rel="stylesheet" href="css/jquerymobile/jquery.mobile-1.4.5.min.css" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Index CSS -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!-- Custom Fonts -->
+    <link href="css/fontawesome/font-awesome.min.css" rel="stylesheet" />
+
+    <title>IPMS_Main_Project</title>
+</head>
+<body>
+
+    <!--Página de Login-->
+    <!--##########################################################################################################-->
+    <div data-role="page" id="login-page">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false" data-theme="b">
+            <h1>IPMS - Login Page</h1>
+            <div class="ui-btn-right"><img id="header-icon" src="images/icon.png" /></div>
+        </div>
+
+        <img id="loginImg" src="images/icon.png" />
+
+        <form>
+            <div style="padding: 10px 20px;">
+                <h3 id="loginH1">Faça Login</h3>
+                <label for="un" class="ui-hidden-accessible">Username:</label>
+                <input type="text" name="user" id="un" value="" placeholder="Username" />
+                <label for="pw" class="ui-hidden-accessible">Password:</label>
+                <input type="password" name="pass" id="pw" value="" placeholder="Password" />
+                <a href="#dashboard-page" class="ui-btn ui-shadow ui-btn-b ui-corner-all ui-btn-icon-right ui-icon-check" data-transition="slide">Login</a>
+                <!--<button type="submit" class="ui-btn ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check" id="btnLogin">Login</button>-->
+            </div>
+        </form>
+
+        <div data-id="f1" data-role="footer" data-position="fixed" data-theme="b" data-tap-toggle="false" data-hide-during-focus="false"><h4>Copyright I.P.M.S. &copy; 2019</h4></div>
+
+    </div>
+
+
+    <!--Página Principal-->
+    <!--##########################################################################################################-->
+    <div data-role="page" id="dashboard-page">
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false" data-theme="b">
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Panel</a>
+            <h1>IPMS - System</h1>
+            <div class="ui-btn-right"><img id="header-icon" src="images/icon.png" /></div>
+        </div>
+
+
+        <div role="main" class="ui-content">
+            <h1>Dashboard</h1>
+
+            <!-- Dashboard Tarefas por Realizar -->
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-cogs fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <div class="huge">4</div>
+                                <div>Tarefas por Realizar!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#taskstodo-page">
+                        <div class="panel-footer">
+                            <span class="pull-left">Ver detalhes</span>
+                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Dashboard Tarefas Realizadas -->
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-green">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-tasks fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <div class="huge">12</div>
+                                <div>Tarefas Realizadas!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="panel-footer">
+                            <span class="pull-left">Ver detalhes</span>
+                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Dashboard Avarias -->
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-yellow">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-exclamation-triangle fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <div class="huge">1</div>
+                                <div>Avarias Registadas!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#reportfailures-page">
+                        <div class="panel-footer">
+                            <span class="pull-left">Reportar Avaria</span>
+                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Dashboard Requisições -->
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-red">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-cart-plus fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <div class="huge">11</div>
+                                <div>Requisições de Material!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#requisitions-page">
+                        <div class="panel-footer">
+                            <span class="pull-left">Requisitar Material</span>
+                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Página de Tarefas a Realizar -->
+    <!--##########################################################################################################-->
+    <div data-role="page" id="taskstodo-page">
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false" data-theme="b">
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Panel</a>
+            <h1>IMPS - System</h1>
+            <div class="ui-btn-right"><img id="header-icon" src="images/icon.png" /></div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h1>Tarefas a Realizar</h1>
+
+            <ul data-split-icon="check" data-role='listview' data-filter='true' data-filter-placeholder='Procurar tarefas...' data-inset='true'>
+                <li>
+                    <a href="#detailedtask-page">
+                        <img class="thumbsImg" src="http://www.pedaleria.com.br/wp-content/uploads/2016/08/img-Graxa_Cabo_de_Aco.jpg" />
+                        <h2>Lubrificar cabos</h2>
+                        <p>Máquina: Bobcat #001</p>
+                    </a>
+                    <a href="#" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+
+                <li>
+                    <a href="#">
+                        <img class="thumbsImg" src="https://i1.wp.com/eventosmotociclisticos.com.br/wp-content/uploads/2016/03/09.jpg?resize=390%2C205&fbclid=IwAR3YrePCBfM76pXVPW4K7LQGjFxaPyapYmITXvI-nKhxaF1DctDkfivQ424" />
+                        <h2>Troca de rolamentos</h2>
+                        <p>Máquina: Bobcat #009</p>
+                    </a>
+                    <a href="#" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+
+                <li>
+                    <a href="#">
+                        <img class="thumbsImg" src="https://nitifilter.com/wp-content/uploads/2015/08/20952739_l-1288x724.jpg?fbclid=IwAR0DcN27ooqKg5nU4gDeoOLPf0Pjf7wTs0DLAQrPWI7qYwAmioswTMGdUNg" />
+                        <h2>Troca de óleo</h2>
+                        <p>Máquina: Bobcat #009</p>
+                    </a>
+                    <a href="#" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+
+                <li>
+                    <a href="#">
+                        <img class="thumbsImg" src="http://www.pedaleria.com.br/wp-content/uploads/2016/08/img-Graxa_Cabo_de_Aco.jpg" />
+                        <h2>Lubrificar cabos</h2>
+                        <p>Máquina: Bobcat #001</p>
+                    </a>
+                    <a href="#" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+
+
+                <li>
+                    <a href="#">
+                        <img class="thumbsImg" src="https://i1.wp.com/eventosmotociclisticos.com.br/wp-content/uploads/2016/03/09.jpg?resize=390%2C205&fbclid=IwAR3YrePCBfM76pXVPW4K7LQGjFxaPyapYmITXvI-nKhxaF1DctDkfivQ424" />
+                        <h2>Troca de rolamentos</h2>
+                        <p>Máquina: Bobcat #012</p>
+                    </a>
+                    <a href="#" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+
+                <li>
+                    <a href="#">
+                        <img class="thumbsImg" src="https://nitifilter.com/wp-content/uploads/2015/08/20952739_l-1288x724.jpg?fbclid=IwAR0DcN27ooqKg5nU4gDeoOLPf0Pjf7wTs0DLAQrPWI7qYwAmioswTMGdUNg" />
+                        <h2>Troca de óleo</h2>
+                        <p>Máquina: Bobcat #009</p>
+                    </a>
+                    <a href="#" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- Página de Tarefa Detalhada -->
+    <!--##########################################################################################################-->
+    <div data-role="page" id="detailedtask-page">
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false" data-theme="b">
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Panel</a>
+            <h1>IMPS - System</h1>
+            <div class="ui-btn-right"><img id="header-icon" src="images/icon.png" /></div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h1>Tarefa Detalhada</h1>
+
+            <div class="well">
+                <div class="row">
+                    <img src="http://www.pedaleria.com.br/wp-content/uploads/2016/08/img-Graxa_Cabo_de_Aco.jpg" class="col-lg-12 col-sm-12 col-xs-12" />
+                </div>
+                <br />
+                <div class="row">
+                    <div>
+                        <b>Nome:</b>
+                        <h4>Lubrificar Cabos</h4>
+                        <b>Máquina:</b>
+                        <p>Bobcat #001</p>
+                        <b>Descrição:</b>
+                        <p>Lubrificar cabos dos travões do Bobcat, a fim de evitar problemas futuros.<p />
+                        <b>Produtos Utilizados:</b>
+                        <select name="" id="" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="right">
+                            <option>Selecione os produtos</option>
+                            <optgroup label="Consumíveis">
+                                <option value="">Óleo 10w40</option>
+                                <option value="">Óleo BP 10w40</option>
+                                <option value="">Óleo BP 5w15</option>
+                                <option value="">Óleo BP w50</option>
+                                <option value="">Lubrificante WD40</option>
+                            </optgroup>
+                            <optgroup label="Peças">
+                                <option value="">Rolamentos</option>
+                                <option value="">Porcas 10mm</option>
+                                <option value="">Correia de Distribuição</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <a href="#" class="ui-btn ui-shadow ui-btn-b ui-corner-all ui-btn-icon-right ui-icon-check" data-transition="slide">Terminar Tarefa</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Página de Tarefas Agendadas -->
+    <!--##########################################################################################################-->
+    <div data-role="page" id="scheduledtasks-page">
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false" data-theme="b">
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Panel</a>
+            <h1>IMPS - System</h1>
+            <div class="ui-btn-right"><img id="header-icon" src="images/icon.png" /></div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h1>Tarefas Agendadas</h1>
+
+            <ul data-role="listview" data-filter='true' data-filter-placeholder='Procurar tarefas...' data-inset="true">
+                <li data-role="list-divider">Sexta-Feira, 8 Fevereiro, 2019 <span class="ui-li-count">2</span></li>
+                <li>
+                    <a href="#">
+                        <img class="thumbsImg" src="http://www.pedaleria.com.br/wp-content/uploads/2016/08/img-Graxa_Cabo_de_Aco.jpg" />
+                        <h3>Lubrificar Cabos</h3>
+                        <p>Máquina: Bobcat #001</p>
+                        <p class="ui-li-aside"><strong>9:00</strong>AM</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img class="thumbsImg" src="https://nitifilter.com/wp-content/uploads/2015/08/20952739_l-1288x724.jpg?fbclid=IwAR0DcN27ooqKg5nU4gDeoOLPf0Pjf7wTs0DLAQrPWI7qYwAmioswTMGdUNg" />
+                        <h3>Troca de Óleo</h3>
+                        <p>Máquina: Bobcat #010</p>
+                        <p class="ui-li-aside"><strong>15:00</strong>PM</p>
+                    </a>
+                </li>
+                <li data-role="list-divider">Sábado, 9 Fevereiro, 2019 <span class="ui-li-count">3</span></li>
+                <li>
+                    <a href="#">
+                        <img class="thumbsImg" src="https://i1.wp.com/eventosmotociclisticos.com.br/wp-content/uploads/2016/03/09.jpg?resize=390%2C205&fbclid=IwAR3YrePCBfM76pXVPW4K7LQGjFxaPyapYmITXvI-nKhxaF1DctDkfivQ424" />
+                        <h3>Trocar Rolamento</h3>
+                        <p>Máquina: Bobcat #002</p>
+                        <p class="ui-li-aside"><strong>9:00</strong>AM</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="thumbsImg" src="https://nitifilter.com/wp-content/uploads/2015/08/20952739_l-1288x724.jpg?fbclid=IwAR0DcN27ooqKg5nU4gDeoOLPf0Pjf7wTs0DLAQrPWI7qYwAmioswTMGdUNg" />
+                        <h3>Troca de Óleo</h3>
+                        <p>Máquina: Bobcat #008</p>
+                        <p class="ui-li-aside"><strong>11:00</strong>AM</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="thumbsImg" src="http://www.pedaleria.com.br/wp-content/uploads/2016/08/img-Graxa_Cabo_de_Aco.jpg" />
+                        <h3>Lubrificar Cabos</h3>
+                        <p>Máquina: Bobcat #007</p>
+                        <p class="ui-li-aside"><strong>15:00</strong>PM</p>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- Página de Avarias -->
+    <!--##########################################################################################################-->
+    <div data-role="page" id="reportfailures-page">
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false" data-theme="b">
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Panel</a>
+            <h1>IMPS - System</h1>
+            <div class="ui-btn-right"><img id="header-icon" src="images/icon.png" /></div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h1>Reportar Avaria</h1>
+
+            <form>
+                <div class="form-group">
+                    <label><b>Título da Avaria:</b></label>
+                    <input type="text" name="failure-tittle" id="failure-tittle" value="" placeholder="Título">
+
+                    <label><b>Descrição:</b></label>
+                    <textarea cols="100" rows="8" name="failure-description" id="failure-description" placeholder="Descrição da Avaria"></textarea>
+
+                    <label class="select"><b>Máquina:</b></label>
+                    <select name="select-machine" id="select-machine" data-native-menu="false">
+                        <option>Selecione a Máquina</option>
+                        <option value="">Bobcat #001</option>
+                        <option value="">Bobcat #002</option>
+                        <option value="">Bobcat #003</option>
+                        <option value="">Bobcat #004</option>
+                    </select>
+
+                    <label for="prducts-choice" class="select"><b>Produtos Utilizados</b></label>
+                    <select name="prducts-choice" id="prducts-choice" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="right">
+                        <option>Selecione os Produtos</option>
+                        <optgroup label="Consumíveis">
+                            <option value="">Óleo 10w40</option>
+                            <option value="">Óleo BP 10w40</option>
+                            <option value="">Óleo BP 5w15</option>
+                            <option value="">Óleo BP w50</option>
+                            <option value="">Lubrificante WD40</option>
+                        </optgroup>
+                        <optgroup label="Peças">
+                            <option value="">Rolamentos</option>
+                            <option value="">Porcas 10mm</option>
+                            <option value="">Correia de Distribuição</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="failure-date"><b>Data da Avaria:</b></label>
+                    <input type="date" name="date" id="date" value="">
+
+                    <label for="failure-photo"><b>Anexer Foto:</b></label>
+                    <input type="text" id="failure-photo" placeholder="URL da Imagem" name="failure-photo" />
+                    <a href="#" class="ui-btn ui-shadow ui-btn-a ui-corner-all ui-btn-icon-right ui-icon-camera">Escolher Foto</a>
+
+                    <a href="#" class="ui-btn ui-shadow ui-btn-b ui-corner-all">Submeter Report</a>
+
+
+                </div>
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- Página de Requisições -->
+    <!--##########################################################################################################-->
+    <div data-role="page" id="requisitions-page">
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false" data-theme="b">
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Panel</a>
+            <h1>IMPS - System</h1>
+            <div class="ui-btn-right"><img id="header-icon" src="images/icon.png" /></div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h1>Requisições</h1>
+
+            <form>
+                <div class="form-group">
+
+                    <label><b>Título da Requisição:</b></label>
+                    <input type="text" name="requisition-tittle" id="requisitions-tittle" value="" placeholder="Título da Requisição">
+
+                    <label><b>Descrição:</b></label>
+                    <textarea cols="100" rows="8" name="requisition-description" id="requisitions-description" placeholder="Descrição do Pedido"></textarea>
+
+                    <label><b>Motivo da Requisição:</b></label>
+                    <textarea cols="100" rows="8" name="requisition-reason" id="requisitions-reason" placeholder="Motivo da requisição"></textarea>
+
+                    <label><b>Nome da Peça / Produto</b></label>
+                    <input type="text" name="requisition-name" id="requisitions-name" value="" placeholder="Nome / Peça">
+
+                    <label for="requisition-amount"><b>Quantidade necessária:</b></label>
+                    <input type="number" name="requisition-amount" pattern="[0-9]*" id="requisition-amount" value="" placeholder="1">
+
+                    <a href="#" class="ui-btn ui-shadow ui-btn-b ui-corner-all">Submeter Requisição</a>
+
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- Página de Produtos -->
+    <!--##########################################################################################################-->
+    <div data-role="page" id="products-page">
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false" data-theme="b">
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Panel</a>
+            <h1>IMPS - System</h1>
+            <div class="ui-btn-right"><img id="header-icon" src="images/icon.png" /></div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h1>Produtos</h1>
+
+            <ul data-role='listview' data-filter='true' data-filter-placeholder='Procurar produtos...' data-inset='true'>
+
+                <li>
+                    <a href="#detailedproducts-page">
+                        <img class="thumbsImg" src="https://s1.medias-norauto.pt/images_produits/Visco%203000%2010W-40%205L/650x650/oleo-de-motor-bp-visco-3000-10w40-5l--355231.jpg" />
+                        <h2>Óleo 10W40</h2>
+                        <p>Stock: 10 unidades</p>
+                    </a>
+
+                <li>
+                    <a href="#">
+                        <img class="thumbsImg" src="https://images.tcdn.com.br/img/img_prod/480993/porca_auto_travante_parlock_zb_ma_5mm_100_pecas_5270_1_20170703171733.jpg" />
+                        <h2>Porcas 5mm</h2>
+                        <p>Stock: 200 caixas</p>
+                    </a>
+
+                <li>
+                    <a href="#">
+                        <img class="thumbsImg" src="https://w1.ezcdn.com.br/ventureshop/fotos/grande/229fg1/cartela-com-16-rolamentos-abec-7-para-rollers-e-skate.jpg" />
+                        <h2>Rolamentos 5 cm</h2>
+                        <p>Stock: 25 unidades</p>
+                    </a>
+
+                <li>
+                    <a href="#">
+                        <img class="thumbsImg" src="https://cdn.motordoctor.de/thumb/assets/ersatz_categories/300x300/36.jpg" />
+                        <h2>Kit de Distribuição</h2>
+                        <p>Stock: 4 unidades</p>
+                    </a>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- Página de Produtos Detalhados -->
+    <!--##########################################################################################################-->
+    <div data-role="page" id="detailedproducts-page">
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false" data-theme="b">
+            <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Panel</a>
+            <h1>IMPS - System</h1>
+            <div class="ui-btn-right"><img id="header-icon" src="images/icon.png" /></div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h1>Detalhes do Produto</h1>
+
+            <div class="well">
+                <div class="row">
+                    <img class="productPhoto" src="https://s1.medias-norauto.pt/images_produits/Visco%203000%2010W-40%205L/650x650/oleo-de-motor-bp-visco-3000-10w40-5l--355231.jpg" />
+                </div>
+            </div>
+            <ul id='ul-list' data-role='listview' data-inset='true'>
+                <li data-role='list-divider' class='capitalize'><b>Nome:</b> Óleo 10W40</li>
+                <li id='productsDescription'><b>Descrição:</b> Lubrificante de Motor BP com espessura 10w40.</li>
+                <li class='capitalize'><b>Categoria:</b> Consumíveis</li>
+                <li class='capitalize'><b>Marca:</b> BP - Portugal</li>
+                <li class='capitalize'><b>Stock:</b> 10 unidades</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- Painel Lateral -->
+    <!--##########################################################################################################-->
+    <div data-role="panel" data-display="push" id="nav-panel" data-theme="b">
+        <ul data-role="listview">
+            <li><h1>IMPS - Control Panel</h1></li>
+            <li><a href="#dashboard-page" class="ui-btn ui-icon-dashboard ui-btn-icon-left" data-transition="slide">Visão Geral</a></li>
+            <li><a href="#taskstodo-page" class="ui-btn ui-icon-cogs ui-btn-icon-left" data-transition="slide">Tarefas a Realizar</a></li>
+            <li><a href="#scheduledtasks-page" class="ui-btn ui-icon-calendar ui-btn-icon-left" data-transition="slide">Tarefas Agendadas</a></li>
+            <li><a href="#reportfailures-page" class="ui-btn ui-icon-alert ui-btn-icon-left" data-transition="slide">Avarias</a></li>
+            <li><a href="#requisitions-page" class="ui-btn ui-icon-cart ui-btn-icon-left" data-transition="slide">Requisições</a></li>
+            <li><a href="#products-page" class="ui-btn ui-icon-cubes ui-btn-icon-left" data-transition="slide">Produtos</a></li>
+            <li><a href="#login-page" class="ui-btn ui-icon-logout ui-btn-icon-left" data-transition="slide">Terminar Sessão</a></li>
+        </ul>
+    </div><!-- /panel -->
+
+
+    <!--Scripts-->
+    <!--##########################################################################################################-->
+    <!-- Jquery Script -->
+    <script src="scripts/jquery/jquery-2.1.4.min.js"></script>
+
+    <!-- Jquery Mobile Script -->
+    <script src="scripts/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Bootstrap Script -->
+    <script src="scripts/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Index Script -->
+    <script type="text/javascript" src="scripts/index.js"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+
+    <script>
+        jQuery(function () {
+            $('#nav-panel').enhanceWithin().panel();
+        });
+    </script>
+
+</body>
+</html>
