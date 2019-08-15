@@ -1,0 +1,55 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Globalization\"><param name=\"android-package\" value=\"org.apache.cordova.globalization.Globalization\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "io.cordova.myapp95597e"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.cordova.myapp95597e"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "cordova-plugin-globalization.GlobalizationError",
+            "file": "plugins/cordova-plugin-globalization/www/GlobalizationError.js",
+            "pluginId": "cordova-plugin-globalization",
+            "clobbers": [
+                "window.GlobalizationError"
+            ]
+        },
+        {
+            "id": "cordova-plugin-globalization.globalization",
+            "file": "plugins/cordova-plugin-globalization/www/globalization.js",
+            "pluginId": "cordova-plugin-globalization",
+            "clobbers": [
+                "navigator.globalization"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-globalization": "1.11.0",
+        "cordova-plugin-whitelist": "1.2.2"
+    }
+}
