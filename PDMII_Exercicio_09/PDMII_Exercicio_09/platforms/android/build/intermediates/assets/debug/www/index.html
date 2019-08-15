@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+            For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+        -->
+         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' 'unsafe-inline' 'unsafe-eval' data: *">
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+   
+        <title>Exercicio 10</title>
+    </head>
+    <body>
+        <!--Página Principal-->
+        <!--##########################################################################################################-->
+        <div data-role="page" id="main-page">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false">
+                <h1>Navegação SPA</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <p>
+                    <a href="#page_form" data-role="button" data-prefetch="true" data-transition="slide" >Inserir Pessoa</a>
+                    <a href="#page_list" id="btnListView" data-role="button" data-prefetch="true" data-transition="slide">Listar Pessoa</a>
+                    <a href="#page_list" id="btnListViewDelete" data-role="button" data-prefetch="true" data-transition="slide">Apagar Pessoa</a>
+                </p>
+            </div>
+            <div data-id="f1" data-role="footer" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false"><h4>Copyright ESTGP &copy; 2017</h4></div>
+        </div>
+
+        <!--Página Inserir
+        <!##########################################################################################################-->
+        <div data-role="page" id="page_form">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false">
+                <a href="#" data-icon="back" data-rel="back" data-iconpos="notext">Home</a>
+                <h3>Inserir</h3>
+            </div>
+            <div role="main" class="ui-content">
+                <form id="form">
+                    <div class="form-group">
+                        <label for="photo-input">Foto:</label>
+                        <input type="text" id="photo-input" placeholder="URL da Imagem" name="name-input" required>
+                        <input type="button" id="btnPickPhoto" value="Escolher foto">
+                    </div>
+                    <div class="form-group">
+                        <label for="name-input">Nome:</label>
+                        <input type="text" id="name-input" placeholder="Introduza o seu nome" name="name-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birth-date-input">Data de Nascimento:</label>
+                        <input id="birth-date-input" type="date" name="birth-date-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="town-input">Localidade:</label>
+                        <input type="text" id="town-input"  placeholder="Introduza a sua localidade" name="town-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-input">Email:</label>
+                        <input type="email" id="email-input" placeholder="Introduza o seu email" name="email-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-input">Telefone:</label>
+                        <input type="number" id="phone-input" placeholder="Introduza o nº de telefone" name="phone-input" required>
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <input type="submit" value="Submeter">
+                    </div>
+                </form>
+            </div>
+            <div data-id="f1" data-role="footer" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false"><h4>Copyright ESTGP &copy; 2017</h4></div>
+        </div>
+
+        <!--Página Listar / Apagar Pessoas-->
+        <!--##########################################################################################################-->
+        <div data-role="page" id="page_list">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false">
+                <a href="#" data-icon="back" data-rel="back" data-iconpos="notext">Home</a>
+                <h1 id="list_delete_title"></h1>
+            </div>
+            <div role="main" class="ui-content">
+                <div id="persons-list"></div>
+            </div>
+            <div data-id="f1" data-role="footer" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false"><h4>Copyright ESTGP &copy; 2017</h4></div>
+        </div>
+
+        <!--Página Detalhes Pessoa-->
+        <!--##########################################################################################################-->
+        <div data-role="page" id="page_details">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false">
+                <a href="#" data-icon="back" data-rel="back" data-iconpos="notext">Home</a>
+                <h1>Detalhes</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <div id="person-details"></div>
+            </div>
+            <div data-id="f1"  data-role="footer" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false"><h4>Copyright ESTGP &copy; 2017</h4></div>
+        </div>
+
+       
+        <!--Scripts-->
+        <!--##########################################################################################################-->
+        <script src="scripts/jquery-1.8.0.min.js"></script>
+        <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+    </body>
+</html>
