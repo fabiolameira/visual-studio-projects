@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Documents\Projectos\VisualStudio2017Projects\PDMII_Exercicio_07\PDMII_Exercicio_07\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="67296da620c7224d8fe6f8b4bd2ad8872b9933c9">
+        <dex dex="D:\Documents\Projectos\VisualStudio2017Projects\PDMII_Exercicio_07\PDMII_Exercicio_07\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_76c0489ecd7caadaa4db3d5ee47424f029825445.jar" />
+    </item>
+
+</items>
