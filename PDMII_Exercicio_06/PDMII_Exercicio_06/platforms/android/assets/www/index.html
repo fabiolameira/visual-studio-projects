@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Exercicio 06</title>
+</head>
+<body>
+
+    <!-- Página Principal -->
+    <div data-role="page" id="main-page">
+        <div data-role="header" data-position="fixed"><h1>Navegação SPA</h1></div>
+
+        <div role="main" class="ui-content">
+            <p>Página Principal</p>
+            <p>
+                <a href="#page_form" class="ui-btn ui-alt-icon ui-corner-all" data-transition="slide">Inserir Dados</a>
+                <a href="#page_list" class="ui-btn ui-alt-icon ui-corner-all" id="btnListView" data-transition="slidedown">Lista</a>
+            </p>
+        </div>
+
+        <div data-role="footer" data-position="fixed"><h4>Copyright ESTGP &copy; 2018</h4></div>
+    </div>
+
+    <!-- Página Filha 1 -->
+    <div data-role="page" id="page_form">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-icon="back" data-rel="back" data-transition="slideup" data-iconpos="notext">Home</a>
+            <h1>Formulário1</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <label>Introduza os seus dados:</label>
+            <form id="form">
+                <div class="form-group">
+                    <label>Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Introduza o seu nome" required />
+                </div>
+
+                <div class="form-group">
+                    <label>Data de Nascimento:</label>
+                    <input type="date" id="birthDate" name="birthDate" placeholder="Introduza a sua data de nascimento" required />
+                </div>
+
+                <div class="form-group">
+                    <label>Localidade:</label>
+                    <input type="text" id="location" name="location" placeholder="Introduza a sua localidade" required />
+                </div>
+
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" id="email" name="Email" placeholder="Introduza o seu email" required />
+                </div>
+
+                <div class="form-group">
+                    <label>Telemóvel:</label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="Introduza o seu contacto" required />
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Submeter" />
+                </div>
+
+            </form>
+        </div>
+
+        <div data-role="footer" data-position="fixed"><h4>Copyright ESTGP &copy; 2018</h4></div>
+    </div>
+
+    <!-- Página da Lista de Pessoas -->
+    <div data-role="page" id="page_list">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-icon="back" data-rel="back" data-transition="slideup" data-iconpos="notext">Home</a>
+            <h1>Resultado</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div id="persons-list"></div>
+        </div>
+
+        <div id="f1" data-role="footer" data-position="fixed"><h4>Copyright ESTGP &copy; 2018</h4></div>
+    </div>
+
+    <!-- Página Detalhes das pessoas -->
+    <div data-role="page" id="page_details">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-icon="back" data-rel="back" data-transition="slideup" data-iconpos="notext">Home</a>
+            <h1>Detalhes</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <div id="person-details"></div>
+        </div>
+
+        <div id="f1" data-role="footer" data-position="fixed"><h4>Copyright ESTGP &copy; 2018</h4></div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script src="scripts/jquery-1.8.0.min.js"></script>
+    <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>
