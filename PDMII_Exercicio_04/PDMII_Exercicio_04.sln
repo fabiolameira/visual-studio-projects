@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "PDMII_Exercicio_04", "PDMII_Exercicio_04\PDMII_Exercicio_04.jsproj", "{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Android = Debug|Android
+		Debug|iOS = Debug|iOS
+		Debug|Windows-ARM = Debug|Windows-ARM
+		Debug|Windows-x64 = Debug|Windows-x64
+		Debug|Windows-x86 = Debug|Windows-x86
+		Release|Android = Release|Android
+		Release|iOS = Release|iOS
+		Release|Windows-ARM = Release|Windows-ARM
+		Release|Windows-x64 = Release|Windows-x64
+		Release|Windows-x86 = Release|Windows-x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Debug|Android.ActiveCfg = Debug|Android
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Debug|Android.Build.0 = Debug|Android
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Debug|Android.Deploy.0 = Debug|Android
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Debug|iOS.ActiveCfg = Debug|iOS
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Debug|iOS.Build.0 = Debug|iOS
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Debug|iOS.Deploy.0 = Debug|iOS
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Debug|Windows-ARM.ActiveCfg = Debug|Windows-ARM
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Debug|Windows-ARM.Build.0 = Debug|Windows-ARM
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Debug|Windows-ARM.Deploy.0 = Debug|Windows-ARM
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Debug|Windows-x64.ActiveCfg = Debug|Windows-x64
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Debug|Windows-x64.Build.0 = Debug|Windows-x64
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Debug|Windows-x64.Deploy.0 = Debug|Windows-x64
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Debug|Windows-x86.ActiveCfg = Debug|Windows-x86
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Debug|Windows-x86.Build.0 = Debug|Windows-x86
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Debug|Windows-x86.Deploy.0 = Debug|Windows-x86
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Release|Android.ActiveCfg = Release|Android
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Release|Android.Build.0 = Release|Android
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Release|Android.Deploy.0 = Release|Android
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Release|iOS.ActiveCfg = Release|iOS
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Release|iOS.Build.0 = Release|iOS
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Release|iOS.Deploy.0 = Release|iOS
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Release|Windows-ARM.ActiveCfg = Release|Windows-ARM
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Release|Windows-ARM.Build.0 = Release|Windows-ARM
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Release|Windows-ARM.Deploy.0 = Release|Windows-ARM
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Release|Windows-x64.ActiveCfg = Release|Windows-x64
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Release|Windows-x64.Build.0 = Release|Windows-x64
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Release|Windows-x64.Deploy.0 = Release|Windows-x64
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Release|Windows-x86.ActiveCfg = Release|Windows-x86
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Release|Windows-x86.Build.0 = Release|Windows-x86
+		{DD5B1A29-8815-4A9D-9556-C8DDC24B4320}.Release|Windows-x86.Deploy.0 = Release|Windows-x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F04B3020-D6CC-4E8A-BA2D-9A527ED8FD02}
+	EndGlobalSection
+EndGlobal
