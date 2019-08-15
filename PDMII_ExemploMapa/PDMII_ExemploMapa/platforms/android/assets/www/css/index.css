@@ -1,0 +1,28 @@
+button{
+    background-color: #0094ff;
+    border: none;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+button:active {
+    background-color: #307bb2;
+}
+
+.buttons-section {
+    margin-top: 25px;
+}
+
+#map {
+    position: relative;
+    height: 320px;
+    width: 100%;
+    margin: 25px auto;
+}
