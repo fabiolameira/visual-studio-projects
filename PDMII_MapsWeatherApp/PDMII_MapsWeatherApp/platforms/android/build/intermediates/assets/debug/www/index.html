@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self' data: gap: http://api.openweathermap.org https://ssl.gstatic.com 'unsafe-eval';
+        script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.gstatic.com https://*.googleapis.com;
+        style-src 'self' 'unsafe-inline' *;
+        media-src 'self' 'unsafe-inline' 'unsafe-eval' *;
+        font-src 'self' 'unsafe-inline' 'unsafe-eval' *;
+        img-src * 'self' data: https:;">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <title>PDMIIMapsWeatherApp</title>
+</head>
+<body>
+    <!-- Tab 1 - MapTab -->
+    <!--##########################################################################################################-->
+    <div data-role="page" id="mapTab">
+
+        <div data-role="header" data-id="head1" data-position="fixed" data-theme="b">
+            <h1>MapWeather App</h1>
+            <div class="ui-btn-right"><img id="header-icon" src="images/icon.png" /></div>
+            <div data-role="navbar">
+                <ul>
+                    <li><a id="mapTabStringMap" href="#mapTab" data-icon="location" data-transition="none" class="ui-btn-active ui-state-persist"></a></li>
+                    <li><a id="searchTabStringMap" href="#seachTab" data-icon="search" data-transition="none"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+
+            <div id="map"></div>
+
+            <div class="buttons-sectio">
+                <button class="ui-btn-active" id="btnLocation" data-icon="location"></button>
+            </div>
+
+        </div>
+
+        <div data-id="f1" data-role="footer" data-position="fixed" data-theme="b" data-tap-toggle="false" data-hide-during-focus="false"><h4>Copyright ESTGP &copy; 2019</h4></div>
+    </div>
+
+    <!-- Tab 2 - SearchTab -->
+    <!--##########################################################################################################-->
+    <div data-role="page" id="seachTab">
+        <div data-role="header" data-id="head1" data-position="fixed" data-theme="b">
+            <h1>MapWeather App</h1>
+            <div class="ui-btn-right"><img id="header-icon" src="images/icon.png" /></div>
+            <div data-role="navbar">
+                <ul>
+                    <li><a id="mapTabStringSearch" href="#mapTab" data-icon="location" data-transition="none"></a></li>
+                    <li><a id="searchTabStringSearch" href="#seachTab" data-icon="search" data-transition="none" class="ui-btn-active ui-state-persist"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+
+            <form>
+                <label for="Location"><span id="insertLocationString"></span>:</label>
+                <input id="location-input" name="location" placeholder="" required />
+                <button class="ui-btn-active" id="get-weather-btn" data-role="button" data-icon="search"></button>
+            </form>
+
+            <ul id="weather-data-search" data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow not-displayed">
+                <li data-role="list-divider" id="title-search" class="ui-li-divider ui-bar-a"></li>
+                <li><span id="summary"><span id="temperature-search"></span> <span id="tempUnityString"></span> <img id="icon-search" src="" /></span></li>
+                <li><span id="maxTemperatureString"></span>: <span id="maxTemperature-search"></span> <span id="maxUnityString"></span></li>
+                <li><span id="minTemperatureString"></span>: <span id="minTemperature-search"></span> <span id="minUnityString"></span></li>
+                <li><span id="windString"></span>: <span id="wind-search"></span> <span id="knotsString"></span></li>
+                <li><span id="humidityString"></span>: <span id="humidity-search"></span> %</li>
+                <li><span id="visibilityString"></span>: <span id="visibility-search"></span></li>
+                <li><span id="sunriseString"></span>: <span id="sunrise-search"></span></li>
+                <li><span id="sunsetString"></span>: <span id="sunset-search"></span></li>
+            </ul>
+
+            <div id="error-msg-search" class="not-displayed"></div>
+
+        </div>
+
+        <div data-id="f1" data-role="footer" data-position="fixed" data-theme="b" data-tap-toggle="false" data-hide-during-focus="false"><h4>Copyright ESTGP &copy; 2019</h4></div>
+    </div>
+
+    <!--Scripts-->
+    <!--##########################################################################################################-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLC112AUDD-6_mwkBStTwSxi0NGH5sCUo"></script>
+    <script src="scripts/jquery-1.8.0.min.js"></script>
+    <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script src="scripts/strings.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+﻿var strings = {
+    en: {
+        mapTab: 'Map',
+        getLocationBtn: 'Get Location',
+        searchTab: 'Search',
+        insertLocationString: 'Insert a Location:',
+        findWeatherBtn: 'Find Weather',
+        location: 'Location',
+        temperature: 'Temperature',
+        maxTemperature: 'Max Temperature',
+        minTemperature: 'Min Temperature',
+        wind: 'Wind',
+        knots: 'knots',
+        humidity: 'Humidity',
+        visibility: 'Visibility',
+        sunrise: 'Sunrise',
+        sunset: 'Sunset',
+        unityString: ' ºF',
+        unity: 'imperial'
+    },
+
+    fr: {
+        mapTab: 'Carte',
+        getLocationBtn: "obtenir l'emplacement",
+        searchTab: 'Chercher',
+        insertLocationString: 'Insérer un lieu',
+        findWeatherBtn: 'Trouver le temps',
+        location: 'Emplacement',
+        temperature: 'Température',
+        maxTemperature: 'Température Max',
+        minTemperature: 'Température Min',
+        wind: 'Vent',
+        knots: ' km/h',
+        humidity: 'Humidité',
+        visibility: 'Visibilité',
+        sunrise: 'Lever du soleil',
+        sunset: 'Le coucher du soleil',
+        unityString: ' ºc',
+        unity: 'metric'
+    },
+
+    pt: {
+        mapTab: 'Mapa',
+        getLocationBtn: "Obter Localização",
+        searchTab: 'Pesquisar',
+        insertLocationString: 'Insira uma Localidade',
+        findWeatherBtn: 'Ver Meteorologia',
+        location: 'Localidade',
+        temperature: 'Temperatura',
+        maxTemperature: 'Temperatura Max',
+        minTemperature: 'Temperatura Min',
+        wind: 'Vento',
+        knots: ' km/h',
+        humidity: 'Humidade',
+        visibility: 'Visibilidade',
+        sunrise: 'Nascer do Sol',
+        sunset: 'Pôr do Sol',
+        unityString: ' ºc',
+        unity: 'metric'
+    },
+
+}
