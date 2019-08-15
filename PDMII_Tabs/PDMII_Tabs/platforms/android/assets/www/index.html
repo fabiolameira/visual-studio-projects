@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' 'unsafe-inline' 'unsafe-eval' data: *">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+
+    <title>PDMII_Tabs</title>
+</head>
+<body>
+    <!-- Tab 1 -->
+    <!--##########################################################################################################-->
+    <div data-role="page" id="tab1">
+
+        <div data-role="header" data-id="head1" data-position="fixed">
+            <h1>Tabs</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#tab1" data-icon="user" data-transition="none" class="ui-btn-active ui-state-presist">Tab Um</a></li>
+                    <li><a href="#tab2" data-icon="video" data-transition="none">Tab Dois</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+
+        </div>
+
+        <div role="main" class="ui-content">
+            <h1>UM</h1>
+        </div>
+
+        <div data-id="f1" data-role="footer" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false"><h4>Copyright ESTGP &copy; 2018</h4></div>
+    </div>
+
+    <!-- Tab 2 -->
+    <!--##########################################################################################################-->
+    <div data-role="page" id="tab2">
+
+        <div data-role="header" data-id="head1" data-position="fixed">
+            <h1>Tabs</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#tab1" data-icon="user" data-transition="none">Tab Um</a></li>
+                    <li><a href="#tab2" data-icon="video" data-transition="none" class="ui-btn-active ui-state-presist">Tab Dois</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content">
+
+        </div>
+
+        <div role="main" class="ui-content">
+            <h1>DOIS</h1>
+        </div>
+
+        <div data-id="f1" data-role="footer" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="false"><h4>Copyright ESTGP &copy; 2018</h4></div>
+    </div>
+
+
+
+    <!--Scripts-->
+    <!--##########################################################################################################-->
+    <script src="scripts/jquery-1.8.0.min.js"></script>
+    <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
